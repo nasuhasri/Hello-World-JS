@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Hello World Using HTML and JS</title>
+        <script type="text/javascript">
+            function funcHello(){
+                var qst = "Insert Your Name: ";
+                var name = prompt(qst, "");
+                textHello = "Hello World! by " + name;
+
+                document.getElementById("hello").innerHTML = textHello;
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="funcHello()">Click Me!</button>
+        <p id="hello"></p>
+    </body>
+</html>
